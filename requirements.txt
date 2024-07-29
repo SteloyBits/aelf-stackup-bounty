@@ -1,0 +1,7 @@
+beautifulsoup4
+lxml
+tqdm
+google-generativeai
+chromadb
+requests
+streamlit
