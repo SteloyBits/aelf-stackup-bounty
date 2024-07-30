@@ -72,7 +72,7 @@ model = genai.GenerativeModel('models/gemini-1.5-flash')
 
 text_summaries = []
 
-for f in html_files:
+for f in html_files[:11]:
     response = model.generate_content([page_summary_prompt, extract_content(f)])
 
     text_summaries.append(response.text)
