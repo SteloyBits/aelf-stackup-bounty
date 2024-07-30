@@ -4,6 +4,11 @@ import lxml
 import re
 import os
 import streamlit as st
+import chromadb
+from chromadb import Documents, EmbeddingFunction, Embeddings
+import google.generativeai as genai
+
+GOOGLE_API_KEY = "AIzaSyDdPYfinXzLvF_Hzpb9wqSJmPRmgNpMK7A"
 
 html_files = ['./sevnone/' + f for f in os.listdir('sevnone')]
 
@@ -61,10 +66,6 @@ page_summary_prompt = f"""You are an assistant tailored for summarizing text for
   These summaries should contain full code snippets if any.
   Note that the summaries will be turned into vector embeddings and used to retrieve the raw text.
   Give a concise summary of the text that is well optimized for retrieval. Here is the text."""
-
-import google.generativeai as genai
-
-GOOGLE_API_KEY = "AIzaSyDdPYfinXzLvF_Hzpb9wqSJmPRmgNpMK7A"
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
