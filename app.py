@@ -5,7 +5,7 @@ import re
 import os
 import streamlit as st
 
-html_files = os.listdir('sevnone')
+html_files = ['./sevnone/' + f for f in os.listdir('sevnone')]
 
 def clean_text(text):
 
