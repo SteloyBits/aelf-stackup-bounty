@@ -5,7 +5,7 @@ import re
 import os
 import streamlit as st
 
-html_files = [filen for filen in os.listdir('./aelf_docs') if filen.endswith('.html')]
+html_files = os.listdir('sevnone')
 
 def clean_text(text):
 
