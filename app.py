@@ -4,7 +4,7 @@ import lxml
 import re
 import os
 import streamlit as st
-import chromadb
+#import chromadb
 from chromadb import Documents, EmbeddingFunction, Embeddings
 import google.generativeai as genai
 
