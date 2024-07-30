@@ -64,7 +64,7 @@ page_summary_prompt = f"""You are an assistant tailored for summarizing text for
 
 import google.generativeai as genai
 
-GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
+GOOGLE_API_KEY = "AIzaSyDdPYfinXzLvF_Hzpb9wqSJmPRmgNpMK7A"
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
