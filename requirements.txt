@@ -5,3 +5,4 @@ google-generativeai
 chromadb
 requests
 streamlit
+pysqlite3-binary
