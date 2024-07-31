@@ -1,9 +1,8 @@
 beautifulsoup4
 lxml
 tqdm
+pysqlite3-binary
 google-generativeai
-sqlite3 >= 3.35.0
 chromadb
 requests
 streamlit
-pysqlite3-binary
