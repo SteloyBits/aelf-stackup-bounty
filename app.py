@@ -1,17 +1,17 @@
+__import__('pysqlite3')
 import bs4
 import requests
 import lxml
 import re
 import os
-__import__('pysqlite3')
-import sys sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+import sys
 import streamlit as st
 import chromadb
 from chromadb import Documents, EmbeddingFunction, Embeddings
 import google.generativeai as genai
 
 GOOGLE_API_KEY = "AIzaSyDdPYfinXzLvF_Hzpb9wqSJmPRmgNpMK7A"
-
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
 html_files = ['./sevnone/' + f for f in os.listdir('sevnone')]
 
 def clean_text(text):
