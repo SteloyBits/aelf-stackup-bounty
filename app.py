@@ -1,3 +1,4 @@
+__import__('pysqlite3')
 import bs4
 import requests
 import lxml
@@ -9,6 +10,8 @@ import chromadb
 from chromadb import Documents, EmbeddingFunction, Embeddings
 import google.generativeai as genai
 
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+os.path.dirname(sys.executable)
 GOOGLE_API_KEY = "AIzaSyDdPYfinXzLvF_Hzpb9wqSJmPRmgNpMK7A"
 html_files = ['./sevnone/' + f for f in os.listdir('sevnone')]
 
