@@ -1,4 +1,3 @@
-__import__('pysqlite3')
 import bs4
 import requests
 import lxml
